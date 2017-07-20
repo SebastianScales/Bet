@@ -5,5 +5,7 @@ target 'Bet' do
 
 	pod ‘Firebase’
 	pod ‘Firebase/Database’
-
+	pod ‘Firebase/Core’
+	pod ‘Firebase/Auth’
+	pod ‘Firebase/Storage’
 end

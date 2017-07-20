@@ -17,8 +17,13 @@
 		2E0E73D71F1C395800829520 /* BetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0E73D61F1C395800829520 /* BetTests.swift */; };
 		2E0E73E21F1C395800829520 /* BetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0E73E11F1C395800829520 /* BetUITests.swift */; };
 		2E0E73F01F1C3AB100829520 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0E73EF1F1C3AB100829520 /* GoogleService-Info.plist */; };
+		2E70481E1F2053C500A05556 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E70481D1F2053C500A05556 /* SignUpViewController.swift */; };
+		2E7048201F207BD400A05556 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E70481F1F207BD400A05556 /* UserListViewController.swift */; };
+		2E7048221F207D9900A05556 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7048211F207D9900A05556 /* UserCell.swift */; };
+		2E7048281F207FEB00A05556 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7048271F207FEB00A05556 /* User.swift */; };
 		2E758AC61F1DBC120036E7AD /* BetFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E758AC51F1DBC120036E7AD /* BetFeedViewController.swift */; };
 		2E758AC81F1DC2100036E7AD /* Sebastian.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E758AC71F1DC2100036E7AD /* Sebastian.png */; };
+		2E91FA811F1F171B008B7171 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E91FA801F1F171B008B7171 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +59,13 @@
 		2E0E73E11F1C395800829520 /* BetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUITests.swift; sourceTree = "<group>"; };
 		2E0E73E31F1C395800829520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0E73EF1F1C3AB100829520 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E70481D1F2053C500A05556 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2E70481F1F207BD400A05556 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		2E7048211F207D9900A05556 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		2E7048271F207FEB00A05556 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E758AC51F1DBC120036E7AD /* BetFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetFeedViewController.swift; sourceTree = "<group>"; };
 		2E758AC71F1DC2100036E7AD /* Sebastian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sebastian.png; sourceTree = "<group>"; };
+		2E91FA801F1F171B008B7171 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		65C1F243C909FEC65C9B302A /* Pods-Bet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bet/Pods-Bet.release.xcconfig"; sourceTree = "<group>"; };
 		8F69273D79F5952C6B87E123 /* Pods-Bet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bet/Pods-Bet.debug.xcconfig"; sourceTree = "<group>"; };
 		D270222EE5AB1FA0ABCF9D67 /* libPods-Bet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,11 +131,12 @@
 		2E0E73BD1F1C395800829520 /* Bet */ = {
 			isa = PBXGroup;
 			children = (
+				2E7048261F207FD300A05556 /* Objects */,
+				2E7048251F207FB800A05556 /* Custom Cell */,
+				2E7048231F207F9100A05556 /* ViewControllers */,
 				2E0E73EF1F1C3AB100829520 /* GoogleService-Info.plist */,
 				2E0E73BE1F1C395800829520 /* AppDelegate.swift */,
-				2E0E73C01F1C395800829520 /* ViewController.swift */,
 				2E0E73C21F1C395800829520 /* Main.storyboard */,
-				2E758AC51F1DBC120036E7AD /* BetFeedViewController.swift */,
 				2E0E73C81F1C395800829520 /* Assets.xcassets */,
 				2E0E73CA1F1C395800829520 /* LaunchScreen.storyboard */,
 				2E758AC71F1DC2100036E7AD /* Sebastian.png */,
@@ -151,6 +162,34 @@
 				2E0E73E31F1C395800829520 /* Info.plist */,
 			);
 			path = BetUITests;
+			sourceTree = "<group>";
+		};
+		2E7048231F207F9100A05556 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E70481D1F2053C500A05556 /* SignUpViewController.swift */,
+				2E0E73C01F1C395800829520 /* ViewController.swift */,
+				2E70481F1F207BD400A05556 /* UserListViewController.swift */,
+				2E91FA801F1F171B008B7171 /* SignInViewController.swift */,
+				2E758AC51F1DBC120036E7AD /* BetFeedViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E7048251F207FB800A05556 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E7048211F207D9900A05556 /* UserCell.swift */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		2E7048261F207FD300A05556 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2E7048271F207FEB00A05556 /* User.swift */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		E214FC06081E506A04A4E662 /* Frameworks */ = {
@@ -351,9 +390,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7048221F207D9900A05556 /* UserCell.swift in Sources */,
+				2E7048201F207BD400A05556 /* UserListViewController.swift in Sources */,
+				2E70481E1F2053C500A05556 /* SignUpViewController.swift in Sources */,
 				2E758AC61F1DBC120036E7AD /* BetFeedViewController.swift in Sources */,
 				2E0E73C11F1C395800829520 /* ViewController.swift in Sources */,
+				2E7048281F207FEB00A05556 /* User.swift in Sources */,
 				2E0E73C71F1C395800829520 /* Bet.xcdatamodeld in Sources */,
+				2E91FA811F1F171B008B7171 /* SignInViewController.swift in Sources */,
 				2E0E73BF1F1C395800829520 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScalesSebastian.Bet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -524,6 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScalesSebastian.Bet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

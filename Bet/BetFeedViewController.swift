@@ -9,9 +9,11 @@
 import UIKit
 import FirebaseDatabase
 import Firebase
+import FirebaseAuth
 
 class BetFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var newBetTextField: UITextField!
     @IBOutlet weak var betButton: UIButton!
@@ -45,6 +47,21 @@ class BetFeedViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
+    @IBAction func newBetPressed(_ sender: Any) {
+        if newBetTextField.text != "" {
+            ref?.child("betList").childByAutoId().setValue(newBetTextField.text)
+            newBetTextField.text = ""
+        }
+    }
+    
+
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        try! FIRAuth.auth()?.signOut()
+        self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
+
+
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myList.count
     }
